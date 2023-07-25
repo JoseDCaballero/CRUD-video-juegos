@@ -7,37 +7,38 @@
     <title>Video Juegos</title>
 </head>
 <body> 
-    <h1>CRUD video juegos</h1>
-    <dialog id="modal">
-        <div class="container">
-            <div>
-                <label for="nombre">Nombre del video juego:</label> 
-                <input type="text" id="nombre" />
+    <div class="principal">
+        <h1>CRUD video juegos</h1>
+        <dialog id="modal">
+            <div class="container">
+                <div>
+                    <label for="nombre">Nombre del video juego:</label> 
+                    <input type="text" id="nombre" />
+                </div>
+                <div>
+                    <label for="fecha">Fecha de lanzamiento del video juego:</label>
+                    <input type="date" id="fecha" />
+                </div>
+                <div>
+                    <label for="descripcion">Descripción del video juego:</label>
+                    <input type="text" id="descripcion" />
+                </div>
+                <div>
+                    <button onclick="agregarRegistro()">Agregar</button>
+                </div>
+            </div>  
+        </dialog>           
+        <div class="contenedor">
+            <div class="open">           
+                <button id="modal-open" class="button_more" onclick="modal_open(this)">Agregar nuevo videojuego</button> 
             </div>
-            <div>
-                <label for="fecha">Fecha de lanzamiento del video juego:</label>
-                <input type="date" id="fecha" />
-            </div>
-            <div>
-                <label for="descripcion">Descripción del video juego:</label>
-                <input type="text" id="descripcion" />
-            </div>
-            <div>
-                <button onclick="agregarRegistro()">Agregar</button>
-            </div>
-        </div>  
-    </dialog>           
-    <div class="contenedor">
-        <div class="open">           
-            <button id="modal-open" class="button_more" onclick="modal_open(this)">Agregar nuevo videojuego</button> 
+            <br>
+            <button onclick="eliminarTodos()" class="botonDel">Eliminar todos los registros</button>
         </div>
-        <br>
-        <button onclick="eliminarTodos()" class="botonDel">Eliminar todos los registros</button>
+        <div id="tablaDatos" class="informacion">
+                    
+        </div> 
     </div>
-    <br>
-    <div id="tablaDatos" class="informacion">
-                
-    </div> 
 <script src="codigo.js"></script>
 </body>
 </html>

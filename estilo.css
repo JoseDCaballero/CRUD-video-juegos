@@ -23,35 +23,26 @@ input[type="date"] {
 #tablaDatos {
     margin-top: 20px;
 }
-/* .button_more{
-    border: 5px solid #BDBDBD;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 350px;
-    height: 35px;
-    color: #fff;
-    cursor: pointer;
-    position: absolute;
-    margin-left: 36%;
+body {
+    background-image: url(https://img.freepik.com/vector-gratis/fondo-textura-acuarela-decorativa-verde-suave_1055-8856.jpg);
+    background-size: cover;
 }
-.botonDel {
-    position: absolute;
-    margin-top: 50px;
-    margin-left: 36%;
-}
-.informacion {
-    position: absolute;
-    margin-top: 50px;
-    margin-left: 36%;
-} */
 .contenedor {
-    border: 1px solid #000;
-    width: 400px;
-    height: 55px;
+    margin-bottom: 20px;
     padding: 40px;
     align-items: center;
     text-align: center;
-    margin-left: 32%;
+}
+.principal {
+    border: 10px solid #000;
+    border-radius: 20px;
+    width: 400px;
+    text-align: center;
+    margin-left: 35%;
+}
+.button_more, .botonDel {
+    border: 5px solid darkgreen;
+    background-color: rgb(9, 224, 45);
+    border-radius: 10px;
+    cursor: pointer;
 }
