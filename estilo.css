@@ -46,3 +46,10 @@ body {
     border-radius: 10px;
     cursor: pointer;
 }
+.edit, .borr {
+    border: 5px solid darkblue;
+    background-color: rgb(9, 66, 224);
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+}

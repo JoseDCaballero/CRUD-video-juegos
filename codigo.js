@@ -36,8 +36,8 @@ function mostrarRegistros() {
     // Agregar cada registro al cuerpo de la tabla
     registros.forEach(function (registro, index) {
         let fila = "<tr><td><p>Nombre del video juego: " + registro.nombre + "<br></td><td><p>Fecha de estreno: " + registro.fecha + "<br></td><td><p>Descripción: " + registro.descripcion + "<br></td>";
-        fila += "<td><button onclick='editarRegistro(" + index + ")'>Editar</button></td>";
-        fila += "<td><button onclick='eliminarRegistro(" + index + ")'>Eliminar</button></td></tr>";
+        fila += "<br><td><button class='edit' onclick='editarRegistro(" + index + ")'>Editar</button></td> ";
+        fila += " <td><button class='borr' onclick='eliminarRegistro(" + index + ")'>Eliminar</button></td></tr>";
         tablaDatos.innerHTML += fila;
         modal_close();
     });
